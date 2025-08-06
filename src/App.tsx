@@ -29,60 +29,79 @@ function App() {
       icon: MessageCircle,
       title: "Order using WhatsApp conversion with AI",
       description: "Take orders directly from WhatsApp with AI-powered conversation flow, automated menu sharing and intelligent order confirmation.",
-      image: "https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "/images/features/food.jpeg"
     },
     {
       icon: MessageCircle,
       title: "Marketing campaigns on WhatsApp",
       description: "Reach your customers with targeted marketing campaigns directly through WhatsApp with personalized messaging.",
-      image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "/images/features/cart-marketing.webp"
     },
     {
       icon: Bot,
       title: "WhatsApp conversion AI bot",
       description: "24/7 AI-powered WhatsApp bot that converts conversations into orders and handles customer inquiries intelligently.",
-      image: "https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "/images/features/whatsapp-ai.webp"
     },
     {
       icon: Phone,
       title: "AI calling for delivery or pickup",
       description: "Automated AI calling system that handles delivery confirmations and pickup notifications with natural voice interactions.",
-      image: "https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "/images/features/aicalling.jpg"
     },
     {
       icon: Bot,
       title: "In-house LLM model for restaurants",
       description: "Uses our proprietary LLM model trained specifically for restaurants and menu items, ensuring accurate and contextual responses.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
+      image: "/images/features/llm.jpeg"
     }
   ];
 
   const clients = [
-    { name: "Bella Vista", logo: "BV" },
-    { name: "Golden Spoon", logo: "GS" },
-    { name: "Ocean Breeze", logo: "OB" },
-    { name: "Mountain View", logo: "MV" },
-    { name: "City Lights", logo: "CL" },
-    { name: "Garden Fresh", logo: "GF" }
+    { name: "DLF", logo: "/images/logos/dlf logo.jpg" },
+    { name: "The Big Chill", logo: "/images/logos/The Big Chill Logo.png" },
+    { name: "Chilis", logo: "/images/logos/chilis logo.png" },
+    { name: "Om Sweets", logo: "/images/logos/om sweets logo.jpg" },
+    { name: "Paul", logo: "/images/logos/paul-logo.png" },
+    { name: "Dasusy", logo: "/images/logos/dasusy logo.jpeg" },
+    { name: "Gola", logo: "/images/logos/gola_logo.png" },
+    { name: "DCH", logo: "/images/logos/dch logo.png" },
+    { name: "Diggin", logo: "/images/logos/Diggin_logo.png" },
+    { name: "Leo", logo: "/images/logos/leo logo.png" },
+    { name: "Anaardana", logo: "/images/logos/anaardana-logo full name.jpg" },
+    { name: "Cafe Amudham", logo: "/images/logos/cafe_amudham_logo.jpeg" },
+    { name: "Gardin by Diggin", logo: "/images/logos/gardin by diggin logo.jpg" },
+    { name: "MKT", logo: "/images/logos/mkt logo.png" },
+    { name: "Rajendra Da Daba", logo: "/images/logos/rajendra_da_daba_logo.png" },
+    { name: "Panchgaon", logo: "/images/logos/panchgaon logo.png" },
+    { name: "Naivedyam", logo: "/images/logos/naivedyam-logo.png" },
+    { name: "Burger Factor", logo: "/images/logos/burger factor logo.png" },
+    { name: "Yo Tibet", logo: "/images/logos/yo_tibet_logo.png" },
+    { name: "Lha Kitchen", logo: "/images/logos/lha_kitchen_logo.png" },
+    { name: "Paparizza", logo: "/images/logos/paparizza logo.jpeg" },
+    { name: "Kwality Dhaba", logo: "/images/logos/kwality dhaba logo1.png" },
+    { name: "Udupi", logo: "/images/logos/udupi_logo.jpg" },
+    { name: "Mysore Cafe", logo: "/images/logos/mysore cafe logo.jpeg" },
+    { name: "Library Jaipur", logo: "/images/logos/library_jaipur_logo.jpg" }
   ];
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      restaurant: "Bella Vista Restaurant",
-      text: "Waitwhiz transformed our customer service. We now handle 3x more orders with the same staff!",
+      name: "Aseem Grover",
+      restaurant: "The Big Chill Cafe",
+      text: "Waitwhiz is a wonderful product and more importantly, they have a wonderful team! This has increased our efficiency and customer satisfaction by 100%",
       rating: 5
     },
     {
-      name: "Mike Chen",
-      restaurant: "Golden Spoon Cafe",
-      text: "The AI bot handles 80% of our customer queries. Our staff can focus on what matters most.",
+      name: "Susaina",
+      restaurant: "Dasusy Pizzeria",
+      text: "The AI bot handles 95% of our customer queries. Our staff can focus on what matters most.",
       rating: 5
     },
     {
-      name: "Emily Rodriguez",
-      restaurant: "Ocean Breeze Bistro",
-      text: "Reservation management has never been easier. The automated system saves us hours daily.",
+      name: "Harsh Chopra",
+      restaurant: "Om Sweets",
+      text: "They have solved our most important problem and got a great product for us. We are very happy with the product and the team.",
       rating: 5
     }
   ];
@@ -132,7 +151,7 @@ function App() {
               >
                 Login
               </a>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              <button onClick={() => scrollToSection('contact')} className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
                 Get Started
               </button>
             </div>
@@ -170,7 +189,7 @@ function App() {
                 >
                   Login
                 </a>
-                <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg mt-4">
+                <button onClick={() => scrollToSection('contact')} className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg mt-4">
                   Get Started
                 </button>
               </div>
@@ -272,8 +291,12 @@ function App() {
                 key={index}
                 className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">{client.logo}</span>
+                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <img 
+                    src={client.logo} 
+                    alt={`${client.name} logo`}
+                    className="w-full h-full object-contain rounded-full"
+                  />
                 </div>
                 <h3 className="font-semibold text-gray-900">{client.name}</h3>
               </div>
@@ -332,7 +355,7 @@ function App() {
             >
               Get Started
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+            <button onClick={() => scrollToSection('contact')} className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
               Contact Sales
             </button>
           </div>
