@@ -400,6 +400,11 @@ function LandingPage() {
                                         Privacy Policy
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link to="/data-deletion" className="hover:text-white transition-colors">
+                                        Data Deletion
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 
