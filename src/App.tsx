@@ -5,6 +5,7 @@ import PrivacyPolicy from './PrivacyPolicy';
 import DataDeletion from './DataDeletion';
 import ScrollToTop from './ScrollToTop';
 import StickyContact from './StickyContact';
+import WashroomFeedback from './WashroomFeedback';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/index.html" element={<Navigate to="/" replace />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/data-deletion" element={<DataDeletion />} />
+        <Route path="/washroom-feedback" element={<WashroomFeedback />} />
       </Routes>
     </Router>
   );
