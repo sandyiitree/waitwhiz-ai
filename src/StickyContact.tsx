@@ -1,9 +1,16 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const StickyContact = () => {
+    const location = useLocation();
     const whatsappNumber = "918104600736";
     const phoneNumber = "+918104600736";
+
+    // Hide CTA on washroom feedback page
+    if (location.pathname === '/washroom-feedback') {
+        return null;
+    }
 
     // WhatsApp URL with a pre-filled message
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi,%20I'm%20interested%20in%20WaitWhiz`;
